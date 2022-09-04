@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BlueYamlPeg.peg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pegasus" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PegGrammar Include="BlueYamlPeg.peg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </PegGrammar>
+  </ItemGroup>
+
+</Project>
