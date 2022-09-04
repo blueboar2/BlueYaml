@@ -1,5 +1,5 @@
-@namespace PegExamples
-@classname ExpressionParser
+@namespace BlueYaml
+@classname YamlParser
 @using System.Globalization
 
     additive <double> -memoize
@@ -16,7 +16,7 @@
         = left:primary "^" right:power { Math.Pow(left, right) }
         / primary
 
-    primary <double> -memoize
+    primary <double>
         = decimal
         / "-" primary:primary { -primary }
         / "(" additive:additive ")" { additive }

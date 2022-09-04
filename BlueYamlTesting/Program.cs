@@ -6,8 +6,8 @@ namespace BlueYamlTesting
     {
         static void Main(string[] args)
         {
-            var parser = new PegExamples.ExpressionParser();
-            var result = parser.Parse("2+2*2");
+            var parser = new BlueYaml.YamlParser();
+            var result = parser.Parse("2+2+2");
             Console.WriteLine(result); // Outputs "11.1".
         }
     }
